@@ -1,16 +1,12 @@
 import './App.css';
-import Heading from './components/Heading';
-import Oscar from './components/Oscar';
-import Status from './components/Status';
+import Button from './components/Button';
+import Input from './components/Input';
 
 function App() {
 	return (
 		<div className='App'>
-			<Status status='loading' />
-			<Heading>Placeholder text</Heading>
-			<Oscar>
-				<Heading>Oscar will go span</Heading>
-			</Oscar>
+			<Button handleClick={(e) => console.log('click', e)} />
+			<Input handleChange={(e) => console.log('change', e)} value='' />
 		</div>
 	);
 }
