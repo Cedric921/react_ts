@@ -1,6 +1,8 @@
+export type NameType = {
+	first: string
+	last: string
+};
+
 export type PersonType = {
-	name: {
-		first: string;
-		last: string;
-	};
+	name: NameType;
 };
